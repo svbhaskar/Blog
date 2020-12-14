@@ -1,0 +1,92 @@
+$primary_color: #FFD616;
+$color1: black;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yellow_font{
+    color: $primary_color;
+}
+
+.heading{
+    // font-family: 'Ubuntu', sans-serif;
+    margin: .5rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    overflow-y: hidden;
+    // height: 70px;
+}
+
+.social-menu{   
+    float: right;
+    position: relative;
+    right: 1rem;
+    top: -.5em;
+}
+.social-menu ul {
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 3px;
+}
+
+.heading_btn{
+    // margin: auto;
+    border: 3px solid $primary_color;
+    font-size: 1rem;
+    border-radius: .5em;
+    position: relative;
+    top: -40px;
+    right: -20px;
+    background-color: white;
+    // text-align: center;
+}
+.heading_btn:hover{
+    background-color: $primary_color;
+}
+.heading_btn_txt{
+    padding: 1em;
+    font-weight: bolder;
+}
+
+.egg_img{
+    width: 75%;
+}
+
+@media (max-width:425px){
+    .heading{
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .social-menu{
+        // float: none;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    //     right: -10px;
+    //     right: 100px;
+    // }
+
+}
+
+@media (max-width:320px){
+    .heading{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .social-menu{
+        width: 100%;
+        float: none;
+        margin: auto;
+        right: -10px;
+        right: 76px;
+    }
+    
+}
